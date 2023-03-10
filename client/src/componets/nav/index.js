@@ -27,7 +27,7 @@ function Nav(props) {
     return (
         <nav className={NavStyles.mainNav}>
             <div>
-                <h3>LSYSTEM</h3>
+                <h3>Skynote Loggin</h3>
             </div>
             <div>
                 {authenticated ?

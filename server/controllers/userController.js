@@ -7,6 +7,7 @@ const User = require("../models/user")
 
 
 const signinController = async(req, res) => {
+    console.log("server.controller.userController.signinController")
     if(req.body.googleAccessToken){
         // gogole-auth
         const {googleAccessToken} = req.body;
@@ -77,6 +78,7 @@ const signinController = async(req, res) => {
 }
 
 const signupController = async(req, res) => {
+    console.log("server.controller.userController.signupController")
     if (req.body.googleAccessToken) {
         const {googleAccessToken} = req.body;
 
