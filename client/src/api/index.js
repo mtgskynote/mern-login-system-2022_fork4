@@ -4,6 +4,8 @@ const API = axios.create({baseURL:"http://localhost:5000"})
 
 API.interceptors.request.use((req)=>{
     if(localStorage.getItem("user_info")){
+        console.log(`localStorage getItem user_info returns ${localStorage.getItem("user_info")}`)
+        console.log(` .... and .token returns ${localStorage.getItem("user_info").token}`)
         req.headers.Authorization = `Bearer ${JSON.parse(localStorage.getItem("user_info").token)}`
     }
 
